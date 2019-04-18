@@ -17,5 +17,21 @@
 }
 
 .form-input:focus {
-	@apply outline-none bg-white border-black
+	@apply outline-none bg-white border-black;
+}
+
+.link {
+	@apply block tracking-wide no-underline text-grey-darkest text-xs font-bold;
+}
+
+.link:hover {
+	@apply text-black;
+}
+
+.button {
+	@apply bg-black text-white tracking-wide py-3 px-6 rounded;
+}
+
+.button:hover {
+	@apply shadow-md;
 }
