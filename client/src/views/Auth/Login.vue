@@ -9,16 +9,16 @@
 				<span class="tracking-wide text-2xl font-bold">Login</span>
 			</div>
       		<div class="mt-8">
-				<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+				<label class="form-label">
 	        		Email Address
 	      		</label>
-				<input class="w-full bg-grey-light appearance-none border-2 border-grey-light rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-black" type="text" placeholder="jane@example.com">
+				<input class="form-input" type="text" placeholder="jane@example.com">
 			</div>
 			<div class="mt-8">
-				<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+				<label class="form-label">
 	        		Password
 	      		</label>
-				<input class="w-full bg-grey-light appearance-none border-2 border-grey-light rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-black" type="password" placeholder="••••••••••••••••••">
+				<input class="form-input" type="password" placeholder="••••••••••••••••••">
 			</div>
 			<div class="flex items-center justify-between mt-8">
 		      <button class="button" type="button">
