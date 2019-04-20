@@ -2,6 +2,11 @@
   <div id="app" class="container mx-auto">
   	<Navbar v-if="noNavbar"/>
     <router-view/>
+    <div class="float-button fixed bg-black mt-10 rounded-full w-12 h-12 text-white flex md:invisible visible shadow-lg active:shadow-sm">
+    	<div class="self-center text-center w-full mt-1">
+    		<FeatherIcon :name="'search'"/>
+    	</div>
+    </div>
   </div>
 </template>
 <script>
@@ -19,3 +24,9 @@ export default {
 	}
 }
 </script>
+<style>
+.float-button{
+	bottom:2em;
+	right:1em;
+}
+</style>
