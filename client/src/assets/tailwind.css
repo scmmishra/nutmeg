@@ -43,3 +43,7 @@
 .button:focus {
 	@apply outline-none border-black;
 }
+
+.profile {
+	@apply bg-grey-light relative cursor-pointer rounded-full mr-4
+}
