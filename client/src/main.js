@@ -3,8 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import '@/assets/tailwind.css'
+import FeatherIcon from '@/components/Feather/FeatherIcon'
 
 Vue.config.productionTip = false
+Vue.component('FeatherIcon', FeatherIcon)
+
+Array.prototype.randomElement = function () {
+    return this[Math.floor(Math.random() * this.length)]
+}
 
 new Vue({
   router,
