@@ -15,7 +15,9 @@
     "chalk": "^2.4.2",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "sequelize": "^5.7.1",
+    "sqlite3": "^4.0.6"
   },
   "devDependencies": {
     "eslint": "^5.16.0",

@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 const chalk = require('chalk')
+const {sequelize} = require('./models')
+const config = require('./config/config')
 
 const app = express()
 app.use(morgan(function (tokens, req, res) {
@@ -10,22 +12,15 @@ app.use(morgan(function (tokens, req, res) {
     + '   URL: ' + chalk.red(tokens.url(req, res))
     + '   TIME: ' + chalk.hex('#2ed573').bold(tokens['response-time'](req, res) + ' ms')
     + '   STATUS: ' + chalk.hex('#ffb142').bold((tokens.status(req, res)))
-    // + '   USER: ' + chalk.yellow(tokens.referrer(req, res) + ' ' + tokens['remote-addr'](req, res))
 }))
 
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/ping', (req, res) => {
-	res.send({
-		message: 'pong'
-	})
-})
+require('./routes')(app)
 
-app.get('/ding', (req, res) => {
-	res.send({
-		message: 'dong'
+sequelize.sync()
+	.then(() => {
+		app.listen(config.port || 8081)
+		console.log(`Server started on port ${config.port}`)
 	})
-})
-
-app.listen(process.env.PORT || 8081)
