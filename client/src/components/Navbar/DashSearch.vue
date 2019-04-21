@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<input type="search" name="dash-search" class="form-input max-w-xs" placeholder="Search [⌘ + K]">
+		<input type="search" name="dash-search" v-shortkey.focus="['meta', 'k']" class="form-input max-w-xs" placeholder="Search [⌘ + K]">
 	</div>
 </template>
 <script>
