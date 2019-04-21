@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<FeatherIcon :name="logo" class="p-2"/>
+		<FeatherIcon :name="logo" class="pr-2 py-2"/>
 		<span class="text-black invisible md:visible tracking-wide uppercase font-bold text-sm">Nutmeg</span>
 	</div>
 </template>

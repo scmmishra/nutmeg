@@ -1,5 +1,5 @@
 <template>
-	<nav class="flex flex-wrap py-2 bg-white fixed w-full container">
+	<nav class="flex flex-wrap py-2 mb-5 bg-grey-lightest w-full container">
 		<NavbarHero class="w-1/5 h-12 flex items-center"/>
 		<DashSearch class="w-3/5 h-12 flex items-center invisible md:visible"/>
 		<NavbarActions class="w-1/5 h-12 flex flex-row-reverse items-center"/>

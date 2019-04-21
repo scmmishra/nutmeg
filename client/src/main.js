@@ -8,6 +8,8 @@ import FeatherIcon from '@/components/Feather/FeatherIcon'
 Vue.config.productionTip = false
 Vue.component('FeatherIcon', FeatherIcon)
 
+Vue.use(require('vue-shortkey'))
+
 Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
 }
