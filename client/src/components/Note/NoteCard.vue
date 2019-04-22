@@ -7,7 +7,7 @@
 			</p>
 		</div>
 		<div class="pt-3">
-			<span v-for="tag in note.tags" class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker hover:bg-grey-darkest hover:text-grey-lighter cursor-pointer mr-2">#{{ tag.name }}</span>
+			<span v-for="tag in note.tags" class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker hover:text-black cursor-pointer mr-2">#{{ tag.name }}</span>
 		</div>
 	</div>
 </template>

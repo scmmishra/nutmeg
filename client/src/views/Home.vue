@@ -1,6 +1,6 @@
 <template>
-	<div class="h-screen">
-		<NoteCard v-for="note in notes" :note="note"/>
+	<div class="h-screen pt-20">
+		<NoteCard v-for="note in notes" :note="note" :key="note.id"/>
 	</div>
 </template>
 
