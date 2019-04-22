@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center">
     <div class="relative">
       <div v-if="open" @click="open = false" class="fixed pin"></div>
-      <button @click="open = !open" class="relative flex items-center focus:outline-none" v-shortkey="['m']" @shortkey="open = !open">
+      <button @click="open = !open" class="relative flex items-center focus:outline-none" v-shortkey="['meta','m']" @shortkey="open = !open">
         <slot></slot>
       </button>
       <transition
