@@ -1,5 +1,5 @@
 <template>
-	<div class="h-screen">
+	<div class="h-screen pt-20">
 		<div class="w-full bg-white rounded shadow overflow-hidden py-4 px-6 mb-5 hover:shadow-md h-full">
 		<div>
 			<div class="font-bold text-3xl mb-2">{{ note.title }}</div>
