@@ -1,9 +1,16 @@
 <template>
-	<nav class="flex flex-wrap py-2 mb-5 bg-grey-lightest w-full container">
-		<NavbarHero class="w-1/5 h-12 flex items-center"/>
-		<DashSearch class="w-3/5 h-12 flex items-center invisible md:visible"/>
-		<NavbarActions class="w-1/5 h-12 flex flex-row-reverse items-center"/>
-	</nav>
+	<div class="bg-grey-lightest fixed pin-t pin-x z-100">
+  <div class="h-16 flex items-center">
+    <div class="w-full container relative mx-auto px-6">
+      <div class="flex items-center -mx-6">
+				<NavbarHero class="w-1/5 h-12 flex items-center"/>
+				<DashSearch class="w-3/5 h-12 flex items-center invisible md:visible"/>
+				<NavbarActions class="w-1/5 h-12 flex flex-row-reverse items-center"/>
+      </div>
+    </div>
+  </div>
+</div>
+
 </template>
 <script>
 import NavbarHero from './NavbarHero.vue'

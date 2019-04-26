@@ -15,6 +15,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/note',
+      name: 'note',
+      component: Note
+    },
+    {
       path: '/register',
       name: 'register',
       component: Register

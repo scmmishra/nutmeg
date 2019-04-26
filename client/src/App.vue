@@ -1,7 +1,9 @@
 <template>
-  <div id="app" class="container mx-auto">
+  <div id="app">
   	<Navbar v-if="noNavbar"/>
-    <router-view/>
+  	<div class="container mx-auto">
+		<router-view/>
+  	</div>
     <div class="float-button fixed bg-black mt-10 rounded-full w-12 h-12 text-white flex md:invisible visible shadow-lg active:shadow-sm">
     	<div class="self-center text-center w-full mt-1">
     		<FeatherIcon :name="'search'"/>
