@@ -10,10 +10,6 @@ module.exports = {
         )
       ),
       full_name: Joi.string()
-        .alphanum()
-        .min(2)
-        .max(32)
-        .required()
     }
 
     const { error, value } = Joi.validate(req.body, schema)
@@ -27,22 +23,17 @@ module.exports = {
           break
         case 'password':
           res.status(400).send({
-            error: `The password failed to match the following rules:
+            error: `The password must contain the following:
 			<br>
-			1. Must contain at least 1 upper case letter
+			1. At least one upper case letter
 			<br>
-			2. Must contain at least 1 lower case letter
+			2. At least one lower case letter
 			<br>
-			3. Must contain at least 1 number and special character
+			3. At least one number and special character
 			<br>
-			4. Must contain at least 8 characters in length
+			4. At least 8 characters in length
 			<br>
 			`
-          })
-          break
-        case 'full_name':
-          res.status(400).send({
-            error: 'Your name must be atleast 3 characters long'
           })
           break
         default:
