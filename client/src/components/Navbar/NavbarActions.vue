@@ -7,13 +7,11 @@
 </template>
 <script>
 import ProfileImage from '@/components/Profile/ProfileImage.vue'
-import Dropdown from '@/components/Dropdown.vue'
 
 	export default {
 		name: 'NavbarActions',
 		components: {
 			ProfileImage,
-			Dropdown,
 		}
 	}
 </script>

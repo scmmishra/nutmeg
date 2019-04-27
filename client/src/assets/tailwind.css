@@ -33,7 +33,7 @@
 }
 
 .button:hover {
-	@apply shadow-lg;
+	@apply shadow-md;
 }
 
 .button:active {

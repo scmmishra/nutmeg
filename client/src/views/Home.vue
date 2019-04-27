@@ -1,5 +1,18 @@
 <template>
 	<div class="h-screen pt-20">
+		<div class="flex pb-5">
+			<div class="w-1/3 flex items-center text-2xl text-grey-darker font-bold"></div>
+			<div class="flex flex-row-reverse items-center w-2/3">
+				<button class="button" type="submit" >New</button>
+				<div class="flex items-center w-32 mr-4 invisible">
+					<select class="appearance-none py-3 bg-grey-light px-3 w-full h-full text-grey-darkest focus:outline-none">
+						<option>Cards</option>
+						<option>List</option>
+						<option>Kanban</option>
+					</select>
+				</div>
+			</div>
+		</div>
 		<NoteCard v-for="note in notes" :note="note" :key="note.id"/>
 	</div>
 </template>

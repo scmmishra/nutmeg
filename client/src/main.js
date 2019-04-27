@@ -4,9 +4,11 @@ import router from './router'
 import store from './store'
 import '@/assets/tailwind.css'
 import FeatherIcon from '@/components/Feather/FeatherIcon'
+import Dropdown from '@/components/Dropdown.vue'
 
 Vue.config.productionTip = false
 Vue.component('FeatherIcon', FeatherIcon)
+Vue.component('Dropdown', Dropdown)
 
 Vue.use(require('vue-shortkey'))
 
