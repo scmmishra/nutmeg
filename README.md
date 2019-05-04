@@ -18,8 +18,13 @@
 1. Clone the app `git clone https://github.com/scmmishra/nutmeg.git`
 2. `cd` into the repository, you shall find two folders `client` and `server`.
 3. `cd` into each directory and run `yarn` or `npm install` whatever makes you roll.
-4. Run `yarn start` on one terminal. P.S. You need to export an environment variable SECRET before running this. 🤦
+4. Run `yarn start` on one terminal.
 5. Run `yarn serve` on another terminal
+
+## Screenshots
+<img src=".github/main.png">
+<img src=".github/register.png">
+<img src=".github/login.png">
 
 ## License
 GNU General Public License v3.0
