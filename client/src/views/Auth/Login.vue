@@ -59,7 +59,10 @@ export default {
   methods: {
     async login() {
       try {
-        await Auth.login(this.form);
+        const response = await Auth.login(this.form);
+        const setToken = this.$store.dispatch('setToken', response.data.token)
+        const setUser = this.$store.dispatch('setUser', response.data.user)
+        Promise.all([setToken, setUser]).then(() => this.$router.push('/'))
       } catch (error) {
         this.invalidLogin();
       }

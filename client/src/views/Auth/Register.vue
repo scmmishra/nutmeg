@@ -28,6 +28,7 @@
             class="form-input"
             type="password"
             placeholder="••••••••••••••••••"
+            autocomplete="new-password"
             v-model="form.password"
           >
         </div>
@@ -68,7 +69,10 @@ export default {
   methods: {
     async register() {
       try {
-        console.log(await Auth.register(this.form));
+        const response = await Auth.register(this.form);
+        const setToken = this.$store.dispatch('setToken', response.data.token)
+        const setUser = this.$store.dispatch('setUser', response.data.user)
+        Promise.all([setToken, setUser]).then(() => this.$router.push('/'))
       } catch (error) {
         this.error = error.response.data.error;
       }
