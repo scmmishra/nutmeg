@@ -7,7 +7,7 @@ function hashPassword (user, options) {
   }
 
   return bcrypt
-    .hash(user.password, 10)
+    .hash(user.password, SALT_FACTOR)
     .then(hash => {
       user.password = hash
     })
@@ -32,8 +32,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       hooks: {
         beforeCreate: hashPassword,
-        beforeUpdate: hashPassword,
-        beforeSave: hashPassword
+        beforeUpdate: hashPassword
       }
     }
   )
