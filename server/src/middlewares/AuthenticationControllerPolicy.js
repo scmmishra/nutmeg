@@ -9,7 +9,7 @@ module.exports = {
           '^(?=.{8,})(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$'
         )
       ),
-      full_name: Joi.string()
+      fullName: Joi.string()
     }
 
     const { error, value } = Joi.validate(req.body, schema)

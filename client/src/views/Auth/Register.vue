@@ -16,7 +16,7 @@
         </div>
         <div class="mt-3">
           <label class="form-label">Full Name</label>
-          <input class="form-input" type="text" placeholder="Jane Doe" v-model="form.full_name">
+          <input class="form-input" type="text" placeholder="Jane Doe" v-model="form.fullName">
         </div>
         <div class="mt-5">
           <label class="form-label">Email Address</label>
@@ -58,7 +58,7 @@ export default {
   data() {
     return {
       form: {
-        full_name: "",
+        fullName: "",
         email: "",
         password: ""
       },
@@ -68,8 +68,7 @@ export default {
   methods: {
     async register() {
       try {
-        console.log(this.form);
-        await Auth.register(this.form);
+        console.log(await Auth.register(this.form));
       } catch (error) {
         this.error = error.response.data.error;
       }
