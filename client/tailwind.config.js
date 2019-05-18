@@ -1,11 +1,14 @@
 module.exports = {
+  prefix: '',
+  important: false,
+  separator: ':',
   theme: {
-    // Some useful comment
+    colors: {},
+    zIndex: {}
   },
   variants: {
-    // Some useful comment
+    appearance: ['responsive'],
+    zIndex: ['responsive']
   },
-  plugins: [
-    // Some useful comment
-  ]
+  plugins: []
 }

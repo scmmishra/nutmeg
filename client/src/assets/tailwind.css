@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -9,11 +9,11 @@
 }
 
 .form-label {
-	@apply block uppercase tracking-wide text-grey-darkest text-xs font-bold mb-2;
+	@apply block uppercase tracking-wide text-gray-800 text-xs font-bold mb-2;
 }
 
 .form-input {
-	@apply bg-grey-light appearance-none border-2 border-grey-light rounded w-full py-2 px-3 text-grey-darkest leading-tight;
+	@apply bg-gray-400 appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-800 leading-tight;
 }
 
 .form-input:focus {
@@ -21,7 +21,7 @@
 }
 
 .link {
-	@apply block tracking-wide no-underline text-grey-darkest text-xs font-bold;
+	@apply block tracking-wide no-underline text-gray-800 text-xs font-bold;
 }
 
 .link:hover {
@@ -45,7 +45,7 @@
 }
 
 .profile {
-	@apply bg-grey-light relative cursor-pointer rounded-full
+	@apply bg-gray-400 relative cursor-pointer rounded-full
 }
 
 .origin-top-right {

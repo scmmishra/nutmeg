@@ -30,7 +30,7 @@
           >
         </div>
         <div v-show="invalid" class="mt-8">
-          <p class="text-md font-thin text-grey-darkest">🙅‍♀️ Incorrect email id or password</p>
+          <p class="text-md font-thin text-gray-800">🙅‍♀️ Incorrect email id or password</p>
         </div>
         <div class="flex items-center justify-between mt-8">
           <button class="button" type="submit" v-on:click="login">Login</button>

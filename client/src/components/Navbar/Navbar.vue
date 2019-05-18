@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-grey-lightest fixed pin-t pin-x z-100">
+	<div class="bg-gray-400est fixed top-0 inset-x-0 z-100">
   <div class="h-16 flex items-center">
     <div class="w-full container relative mx-auto px-6">
       <div class="flex items-center -mx-6">

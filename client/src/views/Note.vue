@@ -4,7 +4,7 @@
 		<div>
 			<div class="font-bold text-3xl mb-2">{{ note.title }}</div>
 			<div class="py-3">
-			<span v-if="note.tags" v-for="tag in note.tags" class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker 	hover:bg-grey-darkest hover:text-grey-lighter cursor-pointer mr-2">#{{ tag.name }}</span>
+			<span v-if="note.tags" v-for="tag in note.tags" class="inline-block bg-gray-400er rounded-full px-3 py-1 text-sm font-semibold text-gray-700 	hover:bg-gray-800 hover:text-gray-400er cursor-pointer mr-2">#{{ tag.name }}</span>
 			</div>
 			<Editor :note="note.body"/>
 		</div>
