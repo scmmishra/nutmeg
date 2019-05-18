@@ -25,7 +25,7 @@
             </li>
             <li class="flex text-grey-darker hover:text-black">
               <FeatherIcon :name="`log-out`" :size="20" class="px-4 py-2"/>
-              <a href="#" class="block text-base py-2 text-grey-darker hover:bg-indigo-500 hover:text-black no-underline">Log Out</a>
+              <a href="#" class="block text-base py-2 text-grey-darker hover:bg-indigo-500 hover:text-black no-underline" @click="logout()">Log Out</a>
             </li>
           </ul>
         </div>
@@ -41,5 +41,14 @@ export default {
       open: false
     }
   },
+  methods: {
+    logout() {
+      this.$store.dispatch('setToken', null)
+      this.$store.dispatch('setUser', null)
+      this.$router.push({
+        name: 'home'
+      })
+    }
+  }
 }
 </script>
